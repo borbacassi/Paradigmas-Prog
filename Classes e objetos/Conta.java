@@ -20,9 +20,12 @@ public class Conta
             this.saldo -= valor;
             System.out.println("novo valor = "+ this.saldo);
         }
-        else{
-           System.out.println("Não foi possível sacar. Saldo insuficiente.");
+        else if (!status){
+           System.out.println("Não foi possível sacar. Conta inativa.");
             
+        }
+        else{
+            System.out.println("Não foi possível sacar. Saldo insuficiente");
         }
     }
     public void encerrarConta(){
