@@ -20,7 +20,7 @@ public class Placar {
     }
 
     public void registrarpt(String time, int pt) {
-        if (time == "casa") {
+        if (time.equals("casa")) {
             switch (pt) {
                 case 1:
                     this.pontosCasa += 1;
@@ -39,7 +39,7 @@ public class Placar {
                     break;
             }
         }
-        else if(time == "visitante"){
+        else if(time.equals("visitante")){
             switch (pt){
                 case 1:
                     this.pontosVisitante += 1;
