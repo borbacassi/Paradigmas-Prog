@@ -1,0 +1,135 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: Atividade 1
+meta:
+  id: wrk_097a4ceb679848dfb0f6fb95738f3381
+  created: 1778983954600
+  modified: 1778984977275
+  description: ""
+collection:
+  - url: http://localhost:8080/cliente
+    name: Consultar Clientes
+    meta:
+      id: req_7a85969a45f6470f998a86672724a3e7
+      created: 1778983954699
+      modified: 1778984210950
+      isPrivate: false
+      description: ""
+      sortKey: -1778983954699
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/12.5.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/cliente
+    name: Criar Clientes
+    meta:
+      id: req_a9c53f814b2148fd8c35f4cf1b5fad94
+      created: 1778984213420
+      modified: 1778984946252
+      isPrivate: false
+      description: ""
+      sortKey: -1778984213420
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	
+        	"nome": "Jair",
+        	"email": "asdasd@gmail.com",
+        	"idade": 33
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/12.5.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/cliente/5
+    name: Alterando Dados
+    meta:
+      id: req_0c2616c7acba43f6acec7ec43a74103a
+      created: 1778984457792
+      modified: 1778984908206
+      isPrivate: false
+      description: ""
+      sortKey: -1778984457792
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        { 
+        "nome": "Pedro S",
+        "email": "p",
+        "idade": 18
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/12.5.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/cliente/6
+    name: Removendo Dados
+    meta:
+      id: req_132dc37344ca458d9bdf9955f2981e05
+      created: 1778984911505
+      modified: 1778984967133
+      isPrivate: false
+      description: ""
+      sortKey: -1778984911505
+    method: DELETE
+    headers:
+      - name: User-Agent
+        value: insomnia/12.5.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_c547e1d45a25f937d854f66748861bc145b7bd40
+    created: 1778983954605
+    modified: 1778983954605
+environments:
+  name: Base Environment
+  meta:
+    id: env_c547e1d45a25f937d854f66748861bc145b7bd40
+    created: 1778983954603
+    modified: 1778983954603
+    isPrivate: false
